@@ -1,0 +1,68 @@
+// .beer-selection {
+//   display: flex;
+//   justify-content: center;
+//   padding: 10px;
+//
+// }
+
+.beer-display {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  margin: 5px;
+  ul {
+    list-style-type: none;
+  }
+}
+
+.cheap {
+  h1 {color: green;
+  }
+}
+
+.expensive {
+  h1 {color: steelblue;
+  }
+}
+
+.strong {
+  font-weight: bolder;
+}
+
+button {
+	padding:5px 30px;
+  margin-top: 10px;
+  margin-left: 20px;
+	border:none;
+  font-weight: bold;
+  background-color: #1c4892;
+  color: white;
+  height: 35px;
+  letter-spacing: 1px;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  font-family: 'Rye', cursive;
+  font-size: 40px;
+}
+
+img {
+  height: 150px;
+}
+
+h1 {
+  font-family: 'Rye', cursive;
+}
+
+.new-keg {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.keg-form {
+  height: 35px;
+  width: 100px;
+}

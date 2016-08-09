@@ -6,6 +6,7 @@ import { Keg } from './keg.model';
   inputs: ['keg'],
   template: `
   <br>
+
   <div class="container">
   <h3> Edit Name: {{ keg.name}}</h3>
   <input [(ngModel)]="keg.name" class="col-sm-4 keg-form"/>
@@ -26,6 +27,7 @@ import { Keg } from './keg.model';
   <h3> Edit Remaining Pints: {{ keg.remainingPints}}</h3>
   <input type="number" min=0 max=124 [(ngModel)]="keg.remainingPints" class="col-sm-4 keg-form"/>
   </div>
+
   `
 })
 export class EditKegDetailsComponent {
