@@ -7,10 +7,10 @@ import { Keg } from './keg.model';
   directives: [KegListComponent],
   template: `
    <h1>Kegs Available</h1>
-    
-   <keg-list [kegList]="kegs">
 
-      </keg-list>
+  <keg-list
+    [kegList]="kegs">
+  </keg-list>
   `
 })
 
@@ -23,6 +23,7 @@ export class AppComponent {
       new Keg("Stella Artois", "Anheuser-Busch", 6, 5, 2),
       new Keg("Space Fruit", "Coaltion Brewing", 5, 7, 3),
       new Keg("Apocalypse", "10 Barrel Brewing", 5, 6.8, 4)
-    ]
+    ];
   }
+
 }

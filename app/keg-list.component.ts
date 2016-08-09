@@ -5,7 +5,7 @@ import { KegComponent } from './keg.component';
 @Component({
   selector: 'keg-list',
   inputs: ['kegList'],
-  outputs: ['onkegSelect'],
+  outputs: ['onKegSelect'],
   directives: [KegComponent],
   template: `
   <h3 *ngFor="#currentKeg of kegList" (click)="kegClicked(currentKeg)">
@@ -27,7 +27,7 @@ export class KegListComponent {
   }
   kegClicked(clickedKeg: Keg): void {
     this.selectedKeg = clickedKeg;
-    // this.onKegSelect.emit(clickedKeg);
-    console.log(this)
+    this.onKegSelect.emit(clickedKeg);
+    console.log(this.selectedKeg.name)
   }
 }
